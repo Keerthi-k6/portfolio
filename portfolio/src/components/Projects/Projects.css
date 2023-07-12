@@ -1,0 +1,94 @@
+.project-wrapper
+{
+    color: white;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.project-container{
+    position:relative;
+    z-index: 1;
+}
+.project-container>h1{
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.projects
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    gap: 2.5rem;
+}
+.project-item
+{
+    background:rgb(255,255,255,0.2);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+.project-item:hover{
+    border: 2px solid #ffb978;
+}
+.project-image
+{
+    overflow: hidden;
+}
+.project-item>p
+{
+    margin: 1.2rem 0 1rem;
+}
+.project-item-cta
+{
+    display: flex;
+    gap: 1rem;
+}
+
+
+@media (max-width: 360px)  {
+    
+    .project-item
+    {
+        width: 250px;
+    }
+    .projects
+    {
+        grid-template-columns: 1fr;
+        gap:1rem;
+    
+    }
+}
+@media (min-width:360px) and ( max-width: 492px)  {
+    .project-item
+    {
+        width: 300px;
+    }
+    .projects
+    {
+        grid-template-columns: 1fr;
+        gap:1rem;
+
+    }
+}
+@media (min-width:493px) and ( max-width: 640px)  {
+    .project-item
+    {
+        width: 350px;
+    }
+    .projects
+    {
+        grid-template-columns: 1fr;
+        gap:1rem;
+
+    }
+}
+@media (min-width:641px) and ( max-width: 1090px)  {
+    .projects
+    {
+        grid-template-columns: 1fr;
+        gap:1rem;
+
+    }
+}
