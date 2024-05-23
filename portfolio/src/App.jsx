@@ -17,7 +17,7 @@ function App() {
         <motion.div
           className="white-gradient" style={{right:'0'}}/>
       <About/>
-        <div className="white-gradient" style={{top:'45%',left:'10%',opacity:'0.9', width:'15rem',height:'15rem',filter:'blur(10rem)'}}/>
+        <div className="white-gradient" style={{top:'45%',left:'10%',opacity:'0.7', width:'15rem',height:'15rem',filter:'blur(10rem)'}}/>
       <Projects/>
         <div className="white-gradient" style={{top:'80%',right:'10%',opacity:'0.9', width:'15rem',height:'15rem',filter:'blur(10rem)'}}/>
       <Contact/>

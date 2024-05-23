@@ -1,39 +1,42 @@
-
-import React, { useState } from 'react'
-import'./Header.css'
-import {BiMenuAltRight} from "react-icons/bi";
+import React, { useState } from 'react';
+import styles from './Header.module.css'; // Import CSS module
+import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from 'react-outside-click-handler';
+
 const Header = () => {
-  const [open,setopen]=useState(false);
-  const getMenuStyles =(open)=> 
-  {
-    if(document.documentElement.clientWidth <= 768) {
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(prevOpen => !prevOpen);
+  };
+
+  const getMenuStyles = (open) => {
+    if (document.documentElement.clientWidth <= 768) {
       return {
-        right:!open && '-100%'
+        right: open ? 0 : '-100%'
       }
-    
+    }
   }
-}
+
   return (
-    <section className='h-wrapper'>
-        <div className='h-container flexCenter innerWidth' style={{justifyContent: 'space-between' ,padding:'1.5rem'}}>
-            <div id="logo">Keerthi Sree</div>
-            <OutsideClickHandler onOutsideClick={()=>setopen(false)}>
-            <div className='flexCenter h-menu' style={getMenuStyles(open)}>
-               <a href=''>About</a>
-               <a href=''>Projects</a>   
-               <a href=''> Contact</a>
-                <button className='button'>
-                    <a href=''>Social Links</a>
-                </button>
-            </div>
-            </OutsideClickHandler>
-        <div className="menu-icon" onClick={()=>setopen(prev=>!prev)}>
+    <section className={styles['h-wrapper']}>
+      <div className={`${styles['h-container']} flexCenter innerWidth `} style={{ justifyContent: 'space-between', padding: '2rem' }}>
+        <div className={styles['logo']}>Keerthi Sree</div>
+        <OutsideClickHandler onOutsideClick={() => setOpen(false)}>
+          <div className={`flexCenter ${styles['h-menu']}`} style={getMenuStyles(open)}>
+            <a href='#about'>About</a>
+            <a href='#exp'>Experience</a>
+            <a href='#projects'>Projects</a>
+            <a href='#contact'>Contact</a>
+
+          </div>
+        </OutsideClickHandler>
+        <div className={styles['menu-icon']} onClick={toggleMenu}>
           <BiMenuAltRight size={30} />
         </div>
-        </div>
+      </div>
     </section>
   )
 }
 
-export default Header
+export default Header;

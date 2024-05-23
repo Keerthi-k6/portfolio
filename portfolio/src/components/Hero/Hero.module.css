@@ -20,12 +20,12 @@
     font-size: 1.2rem;
 
 }
-#hi
+.hi
 {
   font-size: 1.5rem;
   margin-left: 11rem;
 }
-#fd
+.fd
 {
     font-size: 2rem;
     margin-left: 5rem;
@@ -79,7 +79,7 @@
     .hero-container
     {
         margin-top:2rem;
-        margin-left: 5rem;
+        /* margin-left: 5rem; */
         margin-right: 5rem;
     }
     .hero-title{
@@ -95,7 +95,7 @@
         font-size: 1rem;
         line-height: 1.5rem;
     }
-    #hi,#fd 
+    .hi,.fd 
     {
         margin-left:0rem ;
     }

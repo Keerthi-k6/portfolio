@@ -46,6 +46,34 @@
     border-radius: 3px;
 }
 
+.exp-entry {
+    margin: 0 3rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    transition: all 400ms ease;
+}
+
+.exp-details {
+    margin-bottom: 0.5rem;
+}
+
+.exp-details h2 {
+    color:var(--blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.exp-details p {
+    font-size: 1rem;
+}
+
+.exp-description {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 @media (max-width:640px) {
     
     .about-title{
@@ -66,6 +94,9 @@
         padding: 6px 7px 4px 7px;
         font-size: 0.8rem;
         border-radius: 3px;
+    }
+    .exp-description {
+      display: none;
     }
     
 }

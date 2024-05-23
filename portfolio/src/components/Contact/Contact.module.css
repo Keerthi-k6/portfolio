@@ -1,31 +1,31 @@
-.c-wrapper
-{
+/* Contact.module.css */
+
+.c-wrapper {
     color: white;
     position: relative;
     padding-bottom: 2rem;
-}
-.c-container
-{
-    position:relative;
+  }
+  
+  .c-container {
+    position: relative;
     z-index: 1;
     margin-left: 9rem;
     margin-right: 12rem;
-}
-.c-container>h1{
+  }
+  
+  .c-container > h1 {
     font-weight: 600;
     font-size: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-.c-desc
-{
+  }
+  
+  .c-desc {
     font-size: 1.2rem;
     border: 3px dotted #ffb978;
-    
-   
-}
-.orange-circle2
-{
+  }
+  
+  .orange-circle2 {
     height: 5rem;
     width: 5rem;
     background: var(--orange-gradient);
@@ -34,28 +34,25 @@
     right: 33.5%;
     top: 0%;
     z-index: -1;
-}
-
-@media (max-width:640px) {
-    .c-container
-    {
-        margin: 0 3rem ;
+  }
+  
+  @media (max-width: 640px) {
+    .c-container {
+      margin: 0 3rem;
     }
     
-    .c-container>h1
-    {
-        font-size: 1rem;
-    }
-    .c-desc
-    {
-        font-size: 0.8rem;
-       
+    .c-container > h1 {
+      font-size: 1rem;
     }
     
-}
-@media (min-width:641px) and ( max-width: 1090px)
-{
-    .c-container{
-        margin: 0 3rem;
+    .c-desc {
+      font-size: 0.8rem;
     }
-}
+  }
+  
+  @media (min-width: 641px) and (max-width: 1090px) {
+    .c-container {
+      margin: 0 3rem;
+    }
+  }
+  
