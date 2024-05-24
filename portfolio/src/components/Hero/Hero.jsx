@@ -41,10 +41,10 @@ const Hero = () => {
                             <motion.div
                                 className={`${styles['btn-container']} flexStart`} style={{ justifyContent: 'space-evenly' }}>
                                 <button className="button" style={{ marginRight: '2rem' }}>
-                                    <a href=''>Download CV</a>
+                                    <a href='https://drive.google.com/drive/folders/1ZUHXT_tX26O5TgExyJiaEhXtXMiXCy96' target='_blank'>Download CV</a>
                                 </button>
                                 <button className="button">
-                                    <a href=''>Let's Talk</a>
+                                    <a href='mailto:Keerthisree.k6@gmail.com' target='_blank'>Let's Talk</a>
                                 </button>
                             </motion.div>
                         </div>

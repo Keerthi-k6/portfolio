@@ -2,11 +2,11 @@ import React from 'react';
 import styles from './Projects.module.css';
 
 import img1 from '../../assets/CC.png';
-import img4 from '../../assets/blog.png';
 import img5 from '../../assets/bb-1.png';
 import img6 from '../../assets/ca.png';
 import img7 from '../../assets/BlogSpace.png';
 import img8 from '../../assets/mbti.png';
+import img3 from '../../assets/weather.png';
 const data = [
     {
         id: 1,
@@ -43,6 +43,13 @@ const data = [
         github: 'https://github.com/Keerthi-k6/Chat_application',
         live: '',
     },
+    {
+        id: 6,
+        image: img3,
+        title: 'Weather Application',
+        github: 'https://github.com/Keerthi-k6/weather-api',
+        live: 'https://weather-api-tau-virid.vercel.app/',
+    }
 ];
 
 const Projects = () => {
@@ -69,7 +76,6 @@ const Projects = () => {
                     })}
                 </div>
             </div>
-                    <p className={styles['more']}> For more click <a href="https://github.com/Keerthi-k6?tab=repositories" target='_blank' style={{ color: 'blue' } }>here</a></p>
         </section>
     );
 }
