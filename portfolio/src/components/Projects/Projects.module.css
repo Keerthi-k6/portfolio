@@ -90,7 +90,7 @@
 
 @media (min-width: 493px) and (max-width: 640px) {
     .project-item {
-        width: 350px;
+        width: 300px;
     }
 
     .projects {
