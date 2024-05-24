@@ -19,7 +19,7 @@
 .projects {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 0fr);
     gap: 2.5rem;
 }
 
@@ -54,6 +54,8 @@
 }
 
 .project-image img {
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease; 
 }
 
@@ -100,7 +102,7 @@
 
 @media (min-width: 493px) and (max-width: 640px) {
     .project-item {
-        width: 280px;
+        width: 350px;
     }
 
     .projects {
