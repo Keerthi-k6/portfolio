@@ -66,7 +66,7 @@ const Projects = () => {
                                 </div>
                                 <p>{title}</p>
                                 <div className={styles['project-item-cta']}>
-                                    <button className="button"><a href={github} target='_blank'>Github</a></button>
+                                    <button className={"button " + styles['project-btn']}><a href={github} target='_blank'>Github</a></button>
                                     {
                                         live.length === 0 ? <></> : <button className="button"><a href={live} target='_blank'>Live</a></button>
                                     }

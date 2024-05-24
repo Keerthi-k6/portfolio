@@ -24,6 +24,7 @@
 }
 
 .project-item {
+    width: 400px;
     padding: 2rem;
     border-radius: 2rem;
     border: 2px solid rgb(255, 255, 255, 0.3);
@@ -36,6 +37,7 @@
 
 .project-image {
     overflow: hidden;
+
 }
 
 .project-item > p {
@@ -69,12 +71,16 @@
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+    .project-btn
+    {
+        padding: 0.6rem 1rem;
+    }
     
 }
 
 @media (min-width: 360px) and (max-width: 492px) {
     .project-item {
-        width: 300px;
+        width: 260px;
     }
 
     .projects {
@@ -86,11 +92,15 @@
         height: auto; 
         transition: transform 0.3s ease; 
     }
+    .project-btn
+    {
+        padding: 0.6rem 1rem;
+    }
 }
 
 @media (min-width: 493px) and (max-width: 640px) {
     .project-item {
-        width: 300px;
+        width: 280px;
     }
 
     .projects {
