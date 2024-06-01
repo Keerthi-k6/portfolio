@@ -19,8 +19,8 @@ const data = [
         id: 2,
         image: img5,
         title: 'Boss Burger',
-        github: 'https://github.com/Keerthi-k6/blogAppMern',
-        live: 'https://66112e70a087c7cff1e84cef--blogapp-k6.netlify.app/',
+        github: 'https://github.com/Keerthi-k6/Boss-burger',
+        live: 'https://bossburgerb6.netlify.app/',
     },
     {
         id: 3,
